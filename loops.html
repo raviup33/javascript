@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js - Loop in JS</title>
+</head>
+<body>
+    <h2>Js - Loop in Java Script</h2>
+    
+
+</body>
+
+<script>
+console.log("hello world");
+//alert("Ravi class of loop in JS ");
+
+// For Loop- 
+console.log('Number', 'Table 2', 'Table 3', 'Square', 'Cube');
+for(i=1; i<11; i++){    
+    console.log(i, i*2, i*3, i*i, i*i*i);    // This will print Number, 2 and 3 Table  and Square, Cube etc. 
+}
+
+// While Loop-
+let j=0;
+while (j < 5) {
+    console.log(j);
+    j++;
+}
+
+// Do-While Loop-
+let k=1;
+do {
+    console.log(k); // This will print 1,2,3,4,5,6 Numbers  
+    k++;
+}
+while(k<7)
+
+// ********* For Of Loop- *********
+let arr=[0,1,2,3,'rr '];
+for(let value of arr) {
+    console.log('For of Loop output-', value); // This will print 0,1,2,3
+    
+}
+
+// ********* For in Loop- *********
+const person = {
+    name: 'Ravi',
+    age:30,
+    profile:'Developer'
+};
+for(let key in person) {
+    console.log('For in Loop output-', person[key]); // This will print 
+}
+
+
+
+
+
+</script>
+
+</html>
