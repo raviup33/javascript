@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h2>Array and Its Methods</h2>
+    <div class="container">
+        <p>Hi, This is Array and Its Methods class </p>
+    </div>
+
+</body>
+
+<script>
+
+//find() Method - Gives 1st element that satifies condition 
+const Array = [1,2,3,4,5];
+let c = Array.find ((num) => num % 2 === 0);
+console.log('find() method output', c); //Output = 2
+
+//filter() Method - Gives all element that satifies condition 
+const Array2 = [1,2,3,4,5];
+let d = Array2.filter ((num) => num % 2 === 0);
+console.log('filter() method output', d); //Output = [2,4]
+
+//filter() Method - Gives all element that satifies condition 
+const Arrayslice = ["a","b","c","d","e"];
+let e = Arrayslice.slice (1,4);
+console.log('slice() method output', e); //Output = [2,4]
+
+
+//push() Method - Push element after 1st array
+let Array4 = [1,2];
+//Using Push methos
+Array4.push(3,4);
+console.log('Push Array output',Array4); //Output = [1,2,3,4]
+
+//concat() Method - concat element after 1st array
+let Array5 = [5,6];
+//Using Push methos
+let Array6 = Array5.concat(7,8);
+console.log('Concat Array output', Array6); //Output = [1,2,3,4]
+
+// pop() Method - pop element at last array
+let Array7 = [1,2,3,4,5,6,7,8];
+//Using Push methos
+let popped = Array7.pop();
+console.log('Pop Array element', popped); //Output = [8]
+console.log('Popped Array output', Array7);
+
+// shift() Method - shift element at 1st
+let Array8 = [1,2,3,4,5];
+//Using shift methos
+let shifted = Array8.shift();
+console.log('Shifted Array element', shifted); //Output = [1]
+console.log('Shifted Array output', Array8); //[2,3,4,5];
+ 
+
+// splice() Method - splice element at 1st
+let letters = ['a','b', 'c', 'd',];
+
+// Syntax- array.splice(startindex, deletecount, ...itemToAdd)
+//Using splice methos Add x and y at index 1
+letters.splice(1, 0, 'x', 'y');
+console.log('splice Array element', letters); //Output = ['a', 'x', 'y', 'b', 'c', 'd']
+
+// Using map()
+let array9 = [1,2,3];
+let maparray = array9.map((e) => e*2);
+console.log('map array output =' , maparray);
+//Output = [2,4,6]
+
+// Using foreach()
+let array10 = [1,2,3];
+array10.forEach((rr) => {
+    console.log ('foreach array output =' , rr*2);
+});
+//Output = 2,4,6
+
+// Sort the Array 
+let array11 = ['a', 'h', 'f', 'c', 'b' ]
+array11.sort();
+console.log('Sorted array output =' , array11); //Output = ['a', 'b', 'c', 'f', 'h']
+
+array11.reverse();
+console.log('Reverse array output after Sorted =' , array11);
+
+// Recerse the Array
+let array12 = ['a', 'h', 'f', 'c', 'b' ]
+array12.reverse();
+console.log('Reverse array output =' , array12); //Output = ['b', 'c', 'f', 'h', 'a']
+
+// Array like object to Array 
+var arraylike = {0: 'a' , 1: 'b' , 2: 'c' , length: 3 };
+//Using array.from()
+var array13 = Array.from(arraylike);
+console.log('array like object to array output =' , array13);
+
+//Using array.from()
+var array14 = [...arraylike];
+console.log('array like object to array output =' , array14);
+
+</script>
+
+</html>
