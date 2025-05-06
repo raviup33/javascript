@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>JS-Extend class in JS</title>
+  </head>
+  <body>
+    
+    
+      <div class="container">
+          <h2>Js- Extend class in JS </h2>
+      </div>
+
+    <script>  
+    class Human {
+      constructor(name, favfood){
+        this.name=name;
+        this.favfood=favfood;
+      }
+      walk(){
+        console.log(this.name + "Human is walking");
+       
+      }
+    }    
+    class Student extends Human{
+      walk(){
+        console.log(this.name + ": Studens is walking");
+       
+      }
+      eat(){
+        console.log(this.name + " eat " +  this.favfood + " regularly");
+       
+      }
+    }
+    
+    let o =new Student("Ravi", "Paneer");
+    o.walk()
+    o.eat()
+
+
+    </script>
+
+  </body>
+</html>
